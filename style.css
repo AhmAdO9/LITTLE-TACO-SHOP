@@ -484,11 +484,8 @@ tfoot td {
 
 @media screen and (min-width: 373px) {
 
-    .header__h1::before {
-        content: '🌮 '
-    }
     .header__h1::after {
-        content: ' 🌮'
+        content: ' 🌮🌮'
     }
 
     .menu__header,
@@ -498,6 +495,15 @@ tfoot td {
         font-size: 125%;
     }
 
+}
+
+@media screen and (min-width: 572px) {
+    .header__h1::after {
+        content: ' 🌮'
+    }
+    .header__h1::before {
+        content: '🌮 '
+    }
 }
 
 
@@ -572,4 +578,8 @@ tfoot td {
         justify-content: center;
         margin-top: 1rem; 
     
+}
+
+.about {
+    margin-bottom: 1em;
 }
