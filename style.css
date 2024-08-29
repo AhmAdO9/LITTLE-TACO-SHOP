@@ -35,7 +35,7 @@ input, button, textarea {
     --FF: "Nunita", sans-serif;
     --FF-HEADINGS: "Fugaz One", cursive;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
-    /* clamp function is used to make things responsive without having to make things responsive. */
+    /* clamp function is used to make things responsive without having to use media query. */
     
 /* ----------------------------------------------------- */
 
@@ -76,7 +76,7 @@ input, button, textarea {
 
 /* || STANDARD MARGIN */
 
---MARGIN: clamp(1em, 2.5vh, 1.5em), 0;
+    --MARGIN: clamp(1rem, 3vh, 2rem) 0;
 
 }
 
@@ -348,7 +348,7 @@ main {
 /* ----------------------------------------------------- */
 
 .about__trivia-answer {
-    margin-top: 1em;
+    margin: 0.5rem 1rem;
 }
 
 /* ----------------------------------------------------- */
@@ -482,10 +482,13 @@ tfoot td {
     border-bottom-right-radius: var(--BORDER-RADIUS);
 }
 
-@media screen and (min-width: 373px) {
+@media screen and (min-width: 572px) {
 
     .header__h1::after {
-        content: ' 🌮🌮'
+        content: ' 🌮'
+    }
+    .header__h1::before {
+        content: '🌮 '
     }
 
     .menu__header,
@@ -495,15 +498,6 @@ tfoot td {
         font-size: 125%;
     }
 
-}
-
-@media screen and (min-width: 572px) {
-    .header__h1::after {
-        content: ' 🌮'
-    }
-    .header__h1::before {
-        content: '🌮 '
-    }
 }
 
 
@@ -578,8 +572,4 @@ tfoot td {
         justify-content: center;
         margin-top: 1rem; 
     
-}
-
-.about {
-    margin-bottom: 1em;
 }
