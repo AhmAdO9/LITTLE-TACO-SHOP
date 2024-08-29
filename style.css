@@ -120,7 +120,8 @@ input, button, textarea {
 /* ----------------------------------------------------- */
 
 .center {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -567,7 +568,8 @@ tfoot td {
 }
 
 .hours__back-to-top {
-        width: 20%;
-        margin: 1rem auto; 
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem; 
     
 }
